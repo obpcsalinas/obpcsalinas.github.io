@@ -18,9 +18,10 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   padding: 15px;
   text-align: center;
+  z-index: 1000;
 }
 
 nav a {
@@ -32,7 +33,9 @@ nav a {
 
 /* BANNER */
 .banner {
-  background: url('banner.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('banner.jpg') center/cover no-repeat;
+  background-color: #123; /* fallback se não tiver imagem */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -44,13 +47,14 @@ nav a {
 }
 
 .banner h1 {
-  font-size: 70px;
+  font-size: 65px;
   color: #00ff88;
   margin: 0;
 }
 
 .banner h2 {
   font-size: 30px;
+  margin: 0;
 }
 
 .btn {
@@ -86,10 +90,7 @@ nav a {
 
 /* CULTOS */
 .cultos {
-  display: flex;
-  flex-wrap: wrap;
   padding: 40px;
-  gap: 20px;
 }
 
 .culto-box {
@@ -97,7 +98,6 @@ nav a {
   color: #000;
   border-radius: 10px;
   padding: 20px;
-  flex: 1;
 }
 
 /* RÁDIO */
