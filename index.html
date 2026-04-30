@@ -9,18 +9,19 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #f2f2f2;
 }
 
 /* BANNER */
 .banner {
-  background: url('banner.jpg') center/cover no-repeat;
-  height: 400px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.jpg') center/cover no-repeat;
+  height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  text-shadow: 2px 2px 8px black;
+  text-align: center;
 }
 
 .banner h1 {
@@ -30,6 +31,7 @@ body {
 
 .banner h2 {
   font-size: 28px;
+  margin-top: 10px;
 }
 
 /* MENU */
@@ -46,6 +48,7 @@ nav a {
   font-weight: bold;
 }
 
+/* CONTEÚDO */
 section {
   padding: 30px;
   max-width: 1100px;
@@ -54,9 +57,10 @@ section {
 
 .card {
   background: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 12px;
   margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* NOTÍCIAS */
@@ -74,19 +78,6 @@ section {
   border-radius: 10px;
 }
 
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  font-size: 20px;
-  padding: 15px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-}
-
 /* BLOG */
 .post {
   padding: 15px;
@@ -96,12 +87,27 @@ section {
   border-radius: 8px;
 }
 
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 18px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
 /* FOOTER */
 footer {
   background: #0d2b45;
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: 20px;
 }
 </style>
 </head>
